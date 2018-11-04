@@ -1,0 +1,13 @@
+
+
+ <div>
+    <ngx-carousel [inputs]="Config">
+    <ngx-item *ngFor="let item of itemList" NgxCarouselItem>
+      <div [ngStyle]="{'background-color': item.color, 'height.px': 100, 'color': 'white'}">
+        <h3>{{item.title}}</h3>
+      </div>
+    </ngx-item>
+    <button NgxCarouselPrev class="leftRs">&lt;</button>
+    <button NgxCarouselNext class="rightRs">&gt;</button>
+  </ngx-carousel>
+  </div>

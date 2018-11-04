@@ -1,0 +1,30 @@
+<div>
+  <h1 class="blankHeaderSize"> </h1>
+  
+  <div class="headerTitle"> Contact US Form </div>
+
+  <div class="container">
+<!-- form goes here -->
+<form (ngSubmit)="processForm()" >
+
+    <!-- name -->
+    <div class="input-field">
+      <input type="text" name="name" class="input" placeholder="Your Name" [(ngModel)]="name">
+    </div>
+  
+    <!-- email -->
+    <div class="input-field">
+      <input type="text" name="email" class="input" placeholder="Your Email" [(ngModel)]="email" >
+    </div>
+  
+    <!-- message -->
+    <div class="input-field">
+      <textarea class="textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="message"></textarea>
+    </div>
+  
+    <button type="submit" class="button is-danger is-large">Submit</button>
+  
+  </form>
+</div>
+
+</div>

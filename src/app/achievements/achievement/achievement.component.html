@@ -1,0 +1,27 @@
+
+<div>
+  <h1 class="blankHeaderSize"> </h1>
+  
+  <div class="headerTitle"> Achievements </div>
+ <!-- <div fxLayout="wrap"  fxLayoutGap="10px" fxLayoutAlign="start">
+                    <div class="cardSubHeader">{{achievement.Description}} </div> 
+   
+-->
+
+
+    <div class="flex-container">
+        <div  *ngFor="let achievement of achievementsArray">
+            <div class="flex-item">
+                  <div class="cardHeader">  
+                    <h5> {{achievement.title}} </h5>
+                         
+                  </div>  
+                  <img src= "/assets/home-images/image1.jpg" height="400px" width="400px" alt="Photo of a Shiba Inu">  
+                  
+       
+       </div>
+      </div>
+            
+          </div>
+      </div>
+      
