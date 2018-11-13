@@ -9,6 +9,7 @@ export class ContactUsComponent implements OnInit {
 
   name: string;
   email: string;
+  mobile : string;
   message: string;
 
   constructor() { }

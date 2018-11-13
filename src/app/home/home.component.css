@@ -1,6 +1,6 @@
 .carousel{
   margin-top: 0px;
-  padding-top: -50px;
+  padding-top: 0px;
 }
 .carousel .item{
   width: 100%;
@@ -17,8 +17,6 @@ img {
 
 }*/
 
-
-h3 { padding:20px; text-align:center; }
 
 ngx-carousel .ngxcarouselPointDefault {
   position: absolute;
@@ -50,4 +48,38 @@ ngx-carousel button[NgxCarouselNext] {
 
 ngxcarouselPoint > li {
   display : inline;
+}
+
+.crousualHomePage {
+  height:100vh; /*vh stands for view-port height, 1vh is 1% of screen height*/
+
+}
+.mainHomePage {
+  background-color: aquamarine;
+}
+.imageDiv {
+  width: 100%; /* I took the width from your post and placed it in css */
+  height: 100%;
+}
+.imageDiv img { 
+  width: 100%;
+  height: 540px;
+  margin-left: auto;
+	margin-right: auto;
+	display: block; 
+}
+.homePageTitle {
+  position: absolute;
+  color: white;
+  margin-left: 10px;
+  font-size: 32px;
+  font-weight: bolder;
+  text-decoration-color: white;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+  
 }

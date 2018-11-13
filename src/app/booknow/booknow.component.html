@@ -1,0 +1,33 @@
+
+
+<div class="containerLayout" fxLayout="column" fxLayoutAlign="start" [formGroup]="bookNowForm">  
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="From Date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      
+      <!-- <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="To Date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field> -->
+
+  <mat-form-field fxFlex="30">
+      <input matInput="matInput" type="text" placeholder="Name" formControlName="Name" required="required"/>
+    </mat-form-field>
+
+    <mat-form-field fxFlex="30">
+        <input matInput="matInput" type="number" placeholder="Mobile" formControlName="phoneNumber" required="required"/>
+      </mat-form-field>
+
+      <mat-form-field fxFlex="30">
+          <input matInput="matInput" type="email" placeholder="Email" formControlName="email" required="required"/>
+        </mat-form-field>
+        <mat-form-field fxFlex="300">
+            <input matInput="matInput" type="text" placeholder="Description" formControlName="description" required="required"/>
+          </mat-form-field>
+  
+
+  
+</div>

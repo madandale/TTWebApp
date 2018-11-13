@@ -1,0 +1,42 @@
+{
+    "ourServices" :[
+    {
+        "title" : "Mahabaleshawar Round Trip",
+        "imageUrl":"/assets/homeImages/mahabaleshwarEP.jpg",
+        "vehicleType" : "Swift",
+        "amount": "₹ 2500"
+    },
+    {
+        "title" : "Kass Lake 2 way trip",
+        "imageUrl":"/assets/homeImages/kaaslake.jpg",
+        "vehicleType" : "Swift",
+        "amount": "₹ 1000"
+    },{
+        "title" : "Kass Pathar Return",
+        "imageUrl":"/assets/homeImages/kasPathar.jpg",
+        "vehicleType" : "Swift",
+        "amount": "₹ 1000"
+    },{
+        "title" : "Koyana Dam return",
+        "imageUrl":"/assets/homeImages/koyanadam1.jpg",
+        "vehicleType" : "Swift",
+        "amount": "₹ 3000"
+    },{
+        "title" : "Pratapgad return",
+        "imageUrl":"/assets/homeImages/pratapgad.jpeg",
+        "vehicleType" : "Swift",
+        "amount": "₹ 3200"
+    },{
+        "title" : "Sajjangad",
+        "imageUrl":"/assets/homeImages/Sajjangad.jpg",
+        "vehicleType" : "Swift",
+        "amount": "₹ 2500"
+    },{
+        "title" : "Thoseghar",
+        "imageUrl":"/assets/homeImages/thoseghar.jpeg",
+        "vehicleType" : "Swift",
+        "amount": "₹ 2000"
+    }
+]
+
+}

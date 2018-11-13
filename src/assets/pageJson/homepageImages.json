@@ -1,0 +1,28 @@
+{
+    "homeItems" :[
+    {
+        "title" : "Kass Lake",
+        "imageUrl" : "/assets/homeImages/kaaslake.jpg"
+    },
+    {
+        "title" : "Kass Pathar",
+        "imageUrl" : "/assets/homeImages/kasPathar.jpg"
+    }, {
+        "title" : "Koyana Dam",
+        "imageUrl" : "/assets/homeImages/koyanadam1.jpg"
+    }, {
+        "title" : "Mahabaleshwar Elephant Point",
+        "imageUrl" : "/assets/homeImages/mahabaleshwarEP.jpg"
+    }, {
+        "title" : "Sajjangad",
+        "imageUrl" : "/assets/homeImages/Sajjangad.jpg"
+    }, {
+        "title" : "Thoseghar",
+        "imageUrl" : "/assets/homeImages/thoseghar.jpeg"
+    }, {
+        "title" : "Pratapgad",
+        "imageUrl" : "/assets/homeImages/pratapgad.jpeg"
+    }
+]
+
+}

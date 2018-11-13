@@ -15,16 +15,14 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ServicesComponent } from './services/services.component';
 import { CourseCardComponent } from './cources/course-card/course-card.component';
 import { MaterialModule } from './material.module';
-import { AchievementComponent } from './achievements/achievement/achievement.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { Readmorecomponent } from './common/readmore/readmore.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { TopdonorComponent } from './topdonor/topdonor.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule }   from '@angular/forms';
-import { NgxCarouselModule } from 'ngx-carousel'
-
+import { NgxCarouselModule } from 'ngx-carousel';
+import { BooknowComponent } from './booknow/booknow.component'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 const appRoutes: Routes = [
 { path: '', 
@@ -32,14 +30,10 @@ redirectTo: '/home',
 pathMatch: 'full' 
 },
   {path: 'home', component: HomeComponent},
-  {path: 'Achievement', component: AchievementComponent},
+  {path: 'ourservices', component: ServicesComponent},
   {path: 'AboutUs', component: AboutusComponent},
-  {path: 'topdonors', component: TopdonorComponent},
-  {path: 'contactUs', component: ContactUsComponent}
-
-
-
-
+  {path: 'contactUs', component: ContactUsComponent},
+  {path: 'bookNow', component: BooknowComponent}
 
   // {
   //   path: 'cardDetails',
@@ -75,11 +69,10 @@ pathMatch: 'full'
     ContactUsComponent,
     ServicesComponent,
     CourseCardComponent,
-    AchievementComponent,
     Readmorecomponent,
     AboutusComponent,
-    TopdonorComponent    
-  ],
+    BooknowComponent
+    ],
   imports: [
     BrowserModule,
     MaterialModule,
@@ -87,6 +80,7 @@ pathMatch: 'full'
     HttpClientModule,
     NgxCarouselModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
      RouterModule.forRoot(appRoutes)
   ],
@@ -94,3 +88,4 @@ pathMatch: 'full'
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

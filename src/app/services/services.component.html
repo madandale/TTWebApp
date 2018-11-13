@@ -1,3 +1,20 @@
-<p>
-  services works!
-</p>
+
+<div>
+    <h1 class="blankHeaderSize"> </h1>
+    
+    <div class="headerTitle"> Our Services </div>
+      <div class="flex-container">
+          <div  *ngFor="let ourServices of ourServicesArray">
+              <div class="flex-item">
+                    <img src= {{ourServices.imageUrl}} height="400px" width="400px" alt="Photo of a Shiba Inu">  
+                    <div class="cardHeader">  
+                        {{ourServices.title}} 
+                        <button (click)="onClick(ourServices)" id="ourserviceBtn" class="buttonColor">Book Now</button>
+                      <p>  Package Amount : {{ourServices.amount}}  </p>  
+
+                    </div>
+         </div>
+        </div>              
+            </div>
+        </div>
+        

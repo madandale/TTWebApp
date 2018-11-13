@@ -1,13 +1,19 @@
 
 
- <div>
-    <ngx-carousel [inputs]="Config">
-    <ngx-item *ngFor="let item of itemList" NgxCarouselItem>
-      <div [ngStyle]="{'background-color': item.color, 'height.px': 100, 'color': 'white'}">
-        <h3>{{item.title}}</h3>
+ <div class="mainHomePage">
+    <ngx-carousel [inputs]="Config" >
+    <ngx-item *ngFor="let item of locationsToVisit" NgxCarouselItem>
+       
+      <div class="imageDiv">
+          <div class="homePageTitle"> 
+         
+              {{item.title}}
+      
+             </div>
+      <img src={{item.imageUrl}}  alt="">
       </div>
     </ngx-item>
-    <button NgxCarouselPrev class="leftRs">&lt;</button>
-    <button NgxCarouselNext class="rightRs">&gt;</button>
+    <button NgxCarouselPrev >&lt;</button>
+    <button NgxCarouselNext >&gt;</button>
   </ngx-carousel>
   </div>

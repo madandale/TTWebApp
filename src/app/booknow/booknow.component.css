@@ -1,0 +1,18 @@
+.containerLayout {
+    margin-left: 20px;
+  }
+ 
+  
+  
+  .bg {
+    background-color: rgba(0, 0, 0, 0.12)
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .fontsize {
+    font-size: 13px;
+  }
+  

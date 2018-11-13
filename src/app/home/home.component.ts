@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router'
 import { NgxCarousel } from 'ngx-carousel'
-
+import { HttpClient } from '@angular/common/http'; 
+import { Observable } from 'rxjs';
+import 'rxjs/Rx';
 
 @Component({
   selector: 'app-home',
@@ -14,19 +16,37 @@ export class HomeComponent implements OnInit {
   
   public Config: NgxCarousel;
 
-  imagesArray : any;
+  locationsToVisit : any[] = [];
 
-  constructor(private router: Router) {
+  constructor(private router: Router,private http: HttpClient) {
+    
+    this.getJSON().subscribe(data => {
+      const userStr = JSON.stringify(data);
+        console.log(userStr);
+       let locations = JSON.parse(userStr);
+        this.locationsToVisit = locations.homeItems;
+        console.log("locationsToVisit list size"+ this.locationsToVisit.length);
+    }
+      )
 
     this.Config = {
-      grid: {xs: 2, sm: 2, md: 2, lg: 2, all: 0},
+      grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
       slide: 1,
-      speed: 1,
+      speed: 40,
+      interval: 2000,
       point: {
         visible: true
       },
-      loop: true,
-      touch: true
+      loop: true
+    
+      // grid: {xs: 2, sm: 2, md: 2, lg: 2, all: 0},
+      // slide: 1,
+      // speed: 1,
+      // point: {
+      //   visible: true
+      // },
+      // loop: true,
+      // touch: true
     }
 
     this.itemList = [
@@ -45,31 +65,8 @@ export class HomeComponent implements OnInit {
       {
         title: 'slide 4',
         color: 'yellow'
-      },
-      {
-        title: 'slide 5',
-        color: 'black'
-      },
-      {
-        title: 'slide 6',
-        color: 'purple'
-      },
-            {
-        title: 'slide 7',
-        color: 'magenta'
-      },
-      {
-        title: 'slide 8',
-        color: 'pink'
-      },
-      {
-        title: 'slide 9',
-        color: 'grey'
-      },
-      {
-        title: 'slide 10',
-        color: 'orange'
       }
+     
     ]
     
    
@@ -79,7 +76,9 @@ export class HomeComponent implements OnInit {
   }
 
  
-
+  public getJSON(): Observable<any> {
+    return this.http.get("./assets/pageJson/homepageImages.json")
+  }
 
   loadCarDetails() {
    // this.router.navigate(['./cardDetails']);
